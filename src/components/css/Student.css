@@ -1,0 +1,15 @@
+/* Student.css */
+
+.student-container {
+    text-align: center; /* Centers text horizontally */
+  }
+  
+  .student-header {
+    margin: 20px 0; /* Optional: Adjust margin for spacing */
+  }
+  
+  nav ul li .active {
+    font-weight: bold;
+    color: #007bff; /* Highlight color */
+  }
+  
