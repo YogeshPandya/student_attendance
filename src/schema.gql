@@ -1,0 +1,42 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Classes {
+  id: Int!
+  name: String!
+  description: String
+}
+
+type Student {
+  id: Int!
+  name: String!
+  age: Int!
+  email: String!
+  year: Int!
+  classId: Int!
+  studentRollNo: String!
+  class: Classes
+}
+
+type Query {
+  students: [Student!]!
+  studentsWithFilters(filter: GetStudentFilterInput!): [Student!]!
+  getAllClasses: [Classes!]!
+}
+
+input GetStudentFilterInput {
+  classId: Float
+  year: Float
+}
+
+type Mutation {
+  createStudent(createStudentInput: CreateStudentInput!): Student!
+}
+
+input CreateStudentInput {
+  name: String!
+  age: Float!
+  classId: Float!
+  email: String!
+}
